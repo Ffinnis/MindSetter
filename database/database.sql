@@ -1,7 +1,8 @@
 create TABLE person (
     id SERIAL PRIMARY KEY,
     username VARCHAR unique,
-    password VARCHAR
+    password VARCHAR,
+    jwt: VARCHAR
 );
 
 create TABLE map (

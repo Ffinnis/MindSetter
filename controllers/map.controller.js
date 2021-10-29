@@ -14,12 +14,16 @@ class MapController {
 
     }
     async createMap(req, res) {
-
+        try{
+            const map = await mapService.createMap()
+        } catch (e) {
+            console.log(e)
+        }
     }
     async deleteMap(req, res) {
 
     }
-    async editMap(req, res) {
+    async saveMap(req, res) {
 
     }
 }
