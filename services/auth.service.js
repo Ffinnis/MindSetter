@@ -67,6 +67,7 @@ class AuthService {
 
     return {
       user: userDto,
+      token: tokenJwt,
     };
   }
 
