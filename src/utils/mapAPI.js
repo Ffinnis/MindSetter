@@ -15,3 +15,14 @@ export const saveMapDB = async (id, json) => {
   console.log(response);
   return response;
 };
+
+export const getAllMaps = async (id) => {
+  const response = await $host.get(`/api/map/${id}`).catch((err) => {
+    return {
+      message: err.response.data,
+      status: err.response.status,
+    };
+  });
+  console.log(response);
+  return response;
+};
