@@ -7,6 +7,7 @@ export const createChildFunction = (event, arrayOfChild) => {
     propsData: {
       parent: event.target.id,
       index: arrayOfChild.length,
+      leftOfParent: event.target.offsetLeft,
     },
   });
 
@@ -14,5 +15,5 @@ export const createChildFunction = (event, arrayOfChild) => {
 
   event.target.parentNode.appendChild(childInstance.$el);
 
-  return arrayOfChild.push(childInstance);
+  return arrayOfChild.push(childInstance._data);
 };

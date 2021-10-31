@@ -83,6 +83,21 @@
     }
   }
 }
+
+.arrow {
+  pointer-events: none;
+}
+
+.arrow__path {
+  stroke: #000;
+  fill: transparent;
+  stroke-dasharray: 0;
+}
+
+.arrow__head line {
+  stroke: #000;
+  stroke-width: 1px;
+}
 </style>
 <script>
 import store from "./store/index.js";

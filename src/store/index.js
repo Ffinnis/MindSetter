@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     isAuth: false,
     user: null,
+    maps: [],
   },
   mutations: {
     auth(state) {
@@ -14,6 +15,9 @@ export default new Vuex.Store({
     },
     setUser(state, user) {
       state.user = user;
+    },
+    pushMap(state, map) {
+      state.maps.push(map);
     },
   },
   actions: {
@@ -23,6 +27,9 @@ export default new Vuex.Store({
     setUser(context, user) {
       context.commit("setUser", user);
     },
+    pushMap(context, map) {
+      context.commit("pushMap", map);
+    },
   },
   modules: {},
   getters: {
@@ -31,6 +38,9 @@ export default new Vuex.Store({
     },
     getUser: (state) => {
       return state.user;
+    },
+    getMaps: (state) => {
+      return state.maps;
     },
   },
 });

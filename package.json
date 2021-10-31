@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
+    "arrows-svg": "^1.5.5",
     "axios": "^0.24.0",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
@@ -21,6 +22,7 @@
     "portal-vue": "^2.1.7",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-cookies": "^1.7.4",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
